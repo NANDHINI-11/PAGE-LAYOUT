@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+body{
+    background-image: url("https://wallpapercave.com/wp/wp3204256.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+#wrapper
+  {
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    padding : 100px; 
+  }
+
+.neonText {
+    animation: flicker 1.0s infinite alternate;
+    color: #fff;
+  }
+
+  @keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    
+        text-shadow:
+        0 0 4px black,
+        0 0 11px black,
+        0 0 19px black,
+        0 0 40px purple,
+        0 0 80px purple,
+        0 0 90px #00f,
+        0 0 100px #00f,
+        0 0 150px #00f;
+      
+      }
+  
+      20%, 24%, 55% {        
+        text-shadow: none;
+      }
+  }
+
+  h1 {
+    font-size: 70px;
+    align-items: center;    
+  }
+
+  a {
+    padding: 20px 20px;
+    display: inline-block;
+    color: gold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 50px;
+    overflow: hidden;
+    align-items: center;
+    cursor: pointer;
+ }
+
+  a:hover {
+  color: #111;
+  background: gold;
+  box-shadow: 0 0 50px gold;
+  cursor: pointer;
+ }
+
+ #para {
+  display : flex;
+  flex-direction : column;
+  justify-content : top;
+  align-items : center;
+  padding : 100px; 
+  font-size: 50px;
+  margin: 50px;
+  margin-bottom: 50px;
+  border: 7px solid black;
+  width: 80%;
+  height: 1000px;
+ }
+
+ .container {
+  font-size: 50px;
+  color: transparent;
+  text-align: center;
+  animation: effect 2s linear infinite;
+ }
+
+ @keyframes effect {
+  0% {
+      background: linear-gradient(
+          #dde005, #da0303);
+      -webkit-background-clip: text;
+  }
+
+  50% {
+      background: linear-gradient(
+        #008000, #00FF00);
+      -webkit-background-clip: text;
+  }
+
+  100% {
+      background: linear-gradient(
+          #3CE7D7, #000FFF);
+      -webkit-background-clip: text;
+  }
+}
+
+ p {
+   position: sticky;
+   top: 10px;
+ }
+
+ img {
+   border: 3px solid silver;
+ }
